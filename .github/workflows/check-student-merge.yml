@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
       
-      - run: echo "HEAD_HASH=$(git show-ref ${{github.head_ref}} | head -1 | grep -o '^[a-z0-9]*')" >> $GITHUB_ENV
+      - run: echo "HEAD_HASH=${{ github.event.pull_request.head.sha }}" >> $GITHUB_ENV
       - run: echo "BASE_HASH=$(git show-ref ${{github.base_ref}} | head -1 | grep -o '^[a-z0-9]*')" >> $GITHUB_ENV
           
       - name: Evaluate changed files

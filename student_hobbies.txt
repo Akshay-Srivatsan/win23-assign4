@@ -1,6 +1,3 @@
 Surfing (adrazen)
 Languages (akshay01)
-Drawing (jdkula, jdkula)
-
-
-
+Drawing (jdkula)
